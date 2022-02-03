@@ -1,9 +1,11 @@
 const theInput = document.getElementById("input")
 const theButton = document.getElementById("submit-button")
 const theUl = document.getElementById("todo-list")
+const resetBtn = document.getElementById("reset-button")
 console.log(theButton)
 console.log(theInput)
 console.log(theUl)
+console.log(resetBtn)
 theButton.addEventListener('click', function(evnt){
   const newLi = document.createElement('li')
   const newInp = document.querySelector('input')
@@ -12,4 +14,8 @@ theButton.addEventListener('click', function(evnt){
     document.querySelector('ul').appendChild(newLi)
     newInp.value = ''
   }
+})
+
+resetBtn.addEventListener('click', function(evt){
+  
 })
