@@ -11,8 +11,15 @@ body {
 }
 li:hover{
   font-weight: bold;
-  text-decoration: underline;
 }
 button {
-  border-radius: 10px;
+  border-radius: 5px;
+  border-color: salmon;
+}
+
+ul {
+  padding-left: 28%;
+}
+div {
+  text-align: center;
 }

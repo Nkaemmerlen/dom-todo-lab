@@ -19,7 +19,9 @@ theButton.addEventListener('click', function(evnt){
 
 resetBtn.addEventListener('click', function(clear) {
   const theLi = document.querySelectorAll("li")
+  const newInp = document.querySelector('input')
   theLi.forEach(a => a.remove())
+  newInp.value = ''
 })
 
 theUl.addEventListener('click', function(clickClear){
