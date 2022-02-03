@@ -1,0 +1,18 @@
+#submit-button:hover {
+  color: white;
+  background-color: black;
+}
+#reset-button:hover {
+  color:white;
+  background-color: red;
+}
+body {
+  background-color: mintcream;
+}
+li:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+button {
+  border-radius: 10px;
+}

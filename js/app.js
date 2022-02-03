@@ -2,10 +2,11 @@ const theInput = document.getElementById("input")
 const theButton = document.getElementById("submit-button")
 const theUl = document.getElementById("todo-list")
 const resetBtn = document.getElementById("reset-button")
-console.log(theButton)
-console.log(theInput)
-console.log(theUl)
-console.log(resetBtn)
+
+// console.log(theButton)
+// console.log(theInput)
+// console.log(theUl)
+// console.log(resetBtn)
 theButton.addEventListener('click', function(evnt){
   const newLi = document.createElement('li')
   const newInp = document.querySelector('input')
@@ -16,6 +17,13 @@ theButton.addEventListener('click', function(evnt){
   }
 })
 
-resetBtn.addEventListener('click', function(evt){
-  
+resetBtn.addEventListener('click', function(clear) {
+  const theLi = document.querySelectorAll("li")
+  theLi.forEach(a => a.remove())
+})
+
+theUl.addEventListener('click', function(clickClear){
+  console.log(clickClear.target)
+  const clear1 = clickClear.target
+  clear1.remove()
 })
